@@ -2,7 +2,8 @@
 
 #Betty's Bakery
 
-#Betty has always used her grandmother’s recipe book to make cookies, cakes, pancakes, and bread for her friends and family. She’s getting ready to open a business and will need to start buying all of her milk, eggs, sugar, flour, and butter in bulk.
+#Betty has always used her grandmother’s recipe book to make cookies, cakes, pancakes, and bread for her friends and family. She’s getting ready to open a business and will 
+#need to start buying all of her milk, eggs, sugar, flour, and butter in bulk.
 
 #Help Betty figure out how much she needs to buy using NumPy arrays describing her recipes.
 
@@ -10,8 +11,7 @@
 
 import numpy as np
 
-#2. All of Betty’s recipes call for milk, eggs, sugar, flour, and butter. For example, her cupcake 
-# recipe calls for:
+#2. All of Betty’s recipes call for milk, eggs, sugar, flour, and butter. For example, her cupcake recipe calls for:
 
 #Flour	 Sugar	    Eggs	Milk	Butter
 #2 cups	 0.75 cups	2 eggs	1 cups	0.5 cups
@@ -21,8 +21,7 @@ import numpy as np
 
 cupcakes = np.array([2, 0.75, 2, 1, 0.5])
 
-#3. Betty’s assistant has compiled all of her recipes into a csv (comma-separated variable) file called 
-# recipes.csv. Load this file into a variable called recipes.
+#3. Betty’s assistant has compiled all of her recipes into a csv (comma-separated variable) file called recipes.csv. Load this file into a variable called recipes.
 
 recipes = np.genfromtxt('recipes.csv', delimiter=',')
 
@@ -47,8 +46,7 @@ print(eggs)
 # returns:
 # [ 2.  1.  1.  2.]
 
-#6. Which recipes require exactly 1 egg? Use a logical statement to get True or False for each value of 
-#eggs.
+#6. Which recipes require exactly 1 egg? Use a logical statement to get True or False for each value of eggs.
 
 print(eggs == 1)
 # returns: [False  True  True False]
